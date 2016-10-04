@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Service Worker example</title>
+</head>
+<body>
+<h1>My First Service Worker Powered Web App</h1>
+<div id="status"></div>
+<script>
+  const status = document.getElementById("status");
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('./serviceworker.js', {scope: './'})
+      .then((registration) => {
+        if (registration.active) {
+          status.textContent = "Service Worker is active";
+
+        }
+        if (registration.waiting) {
+          status.textContent = "Service Worker is waiting";
+
+        }
+        if (registration.installing) {
+          status.textContent = "Service Worker is installing";
+
+        }
+        if (registration.onpudatefound) {
+          status.textContent = "Found update for Service Worker";
+
+        }
+      })
+  } else {
+    status.textContent = "Service Worker not available";
+  }
+
+</script>
+</body>
+</html>

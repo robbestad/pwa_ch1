@@ -1,0 +1,9 @@
+{
+  "short_name": "React SW Demo",
+  "name": "React Service Worker Example",
+  "start_url": "./?utm_source=web_app_manifest",
+  "display": "browser",
+  "orientation": "portrait",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2E3AA1"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "chapter1",
+  "version": "1.0.0",
+  "description": "## Chapter1",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svenanders/ProgressiveWebApps_Chapter1.git"
+  },
+  "keywords": [],
+  "author": "Sven Anders Robbestad <robbestad@gmail.com> (http://svenardo.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svenanders/ProgressiveWebApps_Chapter1/issues"
+  },
+  "homepage": "https://github.com/svenanders/ProgressiveWebApps_Chapter1#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.10.2",
+    "serve-index": "^1.8.0"
+  }
+}

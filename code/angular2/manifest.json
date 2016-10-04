@@ -1,0 +1,9 @@
+{
+  "short_name": "Angular2 SW Demo",
+  "name": "Angular 2 Service Worker Example",
+  "start_url": "./?utm_source=web_app_manifest",
+  "display": "browser",
+  "orientation": "portrait",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2E3AA1"
+}
