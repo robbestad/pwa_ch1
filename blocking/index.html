@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Worker example: Offloading expensive computation</title>
+  </head>
+  <body>
+    <p>Result of a very computationally expensive calculation: <output id="result"></output></p>
+    <input type="text" placeholder="This input field should be responsive">
+    <script>
+      console.time('compute');
+      document.getElementById('result').textContent = (function(n){
+        var i = 0;
+        while (++i < n * n) {}
+        return i;
+      }(123456));
+      console.timeEnd('compute');
+    </script>
+  </body>
+</html>
